@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 50vh;
+            width: 70vw;
+            background-color: rgb(7, 1, 1);
+
+        }
+        .box{
+            height: 20px;
+            width: 40px;
+            background-color: aqua;
+            animation-name: rkanimation,new2;
+            animation-duration: 2s;
+            animation-iteration-count: 2;
+            animation-direction: reverse;
+        }
+        @keyframes rkanimation{
+            from{
+
+            }
+            to{
+                transform: translate(1000px);
+            }
+
+        }
+        @keyframes new2{
+            0%{
+                transform: rotate(50deg);
+            }
+            25%{
+                transform: rotate(150deg);
+            }
+            50%{
+                transform: rotate(350deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box translate">
+
+        </div>
+    </div>
+</body>
+</html>
