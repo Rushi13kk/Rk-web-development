@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 50vh;
+            width: 70vw;
+            background-color: rgb(7, 1, 1);
+            position: relative;
+
+        }
+        .box{
+            height: 50px;
+            width: 50px;
+            border-radius: 30px;
+            background-color: aqua;
+           animation: rkanimationx 3s linear  infinite, rkanimationy 3s ease-in-out infinite alternate ;
+            position: absolute;
+            bottom: 0;
+            left: 0
+            
+        }
+        @keyframes rkanimationx{
+            from{
+                left: 0;
+              
+            }
+            to{
+               left: 100%;
+            }
+
+        }
+        @keyframes rkanimationy{
+            from{
+               bottom: 0;
+              
+            }
+            to{
+                bottom: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box translate">
+
+        </div>
+    </div>
+</body>
+</html> 
+
+
